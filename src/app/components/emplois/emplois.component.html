@@ -1,0 +1,13 @@
+<div>
+    <label for="title">Poste:</label>
+    <input type="text" id="poste" [(ngModel)]="nouveauEmploi.poste" required>
+  </div>
+  <div>
+    <label for="startDate">Date Début:</label>
+    <input type="date" id="startDate" [(ngModel)]="nouveauEmploi.startDate" required>
+  </div>
+  <div>
+    <label for="endDate">Date Fin:</label>
+    <input type="date" id="endDate" [(ngModel)]="nouveauEmploi.endDate">
+  </div>
+  <button (click)="ajouterEmploi()">AJouter Emploi</button>

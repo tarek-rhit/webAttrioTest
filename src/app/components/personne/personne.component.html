@@ -1,0 +1,13 @@
+<div>
+    <label for="name">nom:</label>
+    <input type="text" id="nom" [(ngModel)]="nouveauPersonne.nom" required>
+  </div>
+  <div>
+    <label for="name">prenom:</label>
+    <input type="text" id="prenom" [(ngModel)]="nouveauPersonne.prenom" required>
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" [(ngModel)]="nouveauPersonne.age" required>
+  </div>
+  <button (click)="ajouterPersonne()">AJouter Personne</button>

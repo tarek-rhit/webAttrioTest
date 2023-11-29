@@ -1,0 +1,25 @@
+<h2>Liste des Employés</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Age</th>
+      <th>Postes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.nom }}</td>
+      <td>{{ employee.prenom }}</td>
+      <td>{{ employee.age }}</td>
+      <td>
+        <ul>
+          <li *ngFor="let poste of employee.postes">
+            {{ poste.poste }} ({{ poste.startDate }} - {{ poste.endDate || 'Present' }})
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
